@@ -1,0 +1,4 @@
+IP: 41.50.61.52
+Ping: 8.677 ms
+Download: 2.01 Mbit/s
+Upload: 4.62 Mbit/s

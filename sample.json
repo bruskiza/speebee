@@ -1,0 +1,15 @@
+{
+  "records": [{
+    "resource": "public_ip",
+    "data": "127.0.0.1"
+  }, {
+    "resource": "ping",
+    "data": 5.60
+  },{
+    "resource": "download",
+    "data": 10000.00
+  }, {
+    "resource": "upload",
+    "data": 20000.00
+  }]
+}
