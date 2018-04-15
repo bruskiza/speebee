@@ -71,4 +71,24 @@ _SPEEBEE_CHANNEL - channel to post to: defaults to 'speebee'
 _SPEEBEE_TIMER - Interval in seconds: defaults to 3600
 ```
 
+Checking It Is Working
+======================
+
+The container
+-------------
+
+The first thing to check is the logs of the docker container.
+Do this by:
+
+```
+docker logs speebee
+```
+
+Beebotte
+--------
+
+If the docker container posting, there should be data on Beebotte itself.
+
+Go into your 'speebee' channel and check which resources are updated.
+
 --
