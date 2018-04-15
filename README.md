@@ -50,5 +50,13 @@ docker run -e _SPEEBEE_TOKEN=<TOKEN FROM YOUR CHANNEL> \
 -e _SPEEBEE_TIMER=<INTERVAL IN SECONDS FOR COLLECTION: 3600 DEFAULT>\
  --name speebee -t speebee```
 
+Environment variables supported
+-------------------------------
 
+```
+_SPEEBEE_API - defaults to api.beebotte.com
+_SPEEBEE_TOKEN - the channel token - REQUIRED
+_SPEEBEE_CHANNEL - channel to post to: defaults to 'speebee'
+_SPEEBEE_TIMER - Interval in seconds: defaults to 3600
+```
 --
