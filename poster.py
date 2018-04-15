@@ -17,7 +17,7 @@ if '_SPEEBEE_TOKEN' in os.environ:
     _token = os.environ['_SPEEBEE_TOKEN']
 else:
     print "No token specified. We cannot post to Beebotte without it. Please "\
-          . "set the _SPEEBEE_TOKEN environment variable."
+          "set the _SPEEBEE_TOKEN environment variable."
     sys.exit()
 
 if '_SPEEBEE_CHANNEL' in os.environ:
