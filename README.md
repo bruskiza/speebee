@@ -17,8 +17,8 @@ Technologies used
 * SpeedTest cli
 * BeeBotte.com
 
-Setup
------
+Beebotte Setup
+--------------
 
 Before you deploy your docker container, register with BeeBotte.com.
 
@@ -40,9 +40,15 @@ The result should look like this:
 
 ![BeeBotte Channel Setup](img/beebotte_channel_setup.png)
 
-***Take note of the 'Channel Token'. We will use that in the next step.
+***Take note of the 'Channel Token'. We will use that in the next step.***
 
+Starting the Docker container
+-----------------------------
 
+```
+docker run -e _SPEEBEE_TOKEN=<TOKEN FROM YOUR CHANNEL> \
+-e _SPEEBEE_TIMER=<INTERVAL IN SECONDS FOR COLLECTION: 3600 DEFAULT>\
+ --name speebee -t speebee```
 
 
 --
