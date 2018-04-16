@@ -29,7 +29,7 @@ Once logged into Beebotte:
 * Click Create New
 * Under 'Channel Name' enter ***speebee***
 * Under ***configured resources*** add four as follows:
-  * public_ip - Type: text
+  * public_ip - Type: string
   * ping - Type: number
   * download - Type: speed
   * upload - Type: speed
