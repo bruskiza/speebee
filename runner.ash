@@ -15,9 +15,9 @@ do
   echo "IP: $IP" >> $FILE_NAME
 
   echo -n `date`
-  echo "Using Channel token: '$_SPEEBEE_TOKEN'"
+  echo " Using Channel token: '$_SPEEBEE_TOKEN'"
   echo -n `date`
-  echo "Posting to channel: '$_SPEEBEE_CHANNEL'"
+  echo " Posting to channel: '$_SPEEBEE_CHANNEL'"
   echo -n `date`
   echo " Public IP: $IP. Starting speed test..."
   export FILE_NAME=$FILE_NAME
