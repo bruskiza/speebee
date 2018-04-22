@@ -2,8 +2,16 @@
 SpeeBee
 =======
 
-This repository contains the code for a simple speed test command line that
-posts to BeeBotte.com.
+SpeeBee is a host-based monitoring solution for speed tests.
+
+![Speed Tests](https://raw.githubusercontent.com/bruskiza/speebee/master/img/example_speed_test.png)
+
+
+![Docker Pulls](https://img.shields.io/docker/automated/bruskiza/speebee.svg)
+![Docker Pulls](https://img.shields.io/docker/build/bruskiza/speebee.svg)
+![Docker Pulls](https://img.shields.io/docker/pulls/bruskiza/speebee.svg)
+![Docker Pulls](https://img.shields.io/docker/stars/bruskiza/speebee.svg)
+[![GitHub license](https://img.shields.io/github/license/bruskiza/speebee.svg)](https://github.com/bruskiza/speebee/blob/master/LICENSE)
 
 Intention
 ---------
