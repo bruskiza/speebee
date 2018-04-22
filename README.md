@@ -56,7 +56,7 @@ Starting the Docker container
 -----------------------------
 
 ```
-docker run -e _SPEEBEE_TOKEN=<TOKEN FROM YOUR CHANNEL> \
+docker run --restart unless-stopped -e _SPEEBEE_TOKEN=<TOKEN FROM YOUR CHANNEL> \
 -e _SPEEBEE_TIMER=<INTERVAL IN SECONDS FOR COLLECTION: 3600 DEFAULT>\
  -d --name speebee bruskiza/speebee
 ```
