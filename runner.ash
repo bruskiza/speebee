@@ -22,6 +22,11 @@ do
   echo " Public IP: $IP. Starting speed test..."
   export FILE_NAME=$FILE_NAME
   speedtest-cli --simple >> $FILE_NAME
+  retVal=$?
+  if [ $retVal -ne 0 ]; then
+    echo "Could not run speedtest... exiting"
+    exit $retVal
+  fi
   /app/bin/poster.py $FILE_NAME
   echo -n `date`
   echo " Test completed... sleeping for $TIMER seconds..."
