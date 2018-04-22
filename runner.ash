@@ -24,7 +24,8 @@ do
   speedtest-cli --simple >> $FILE_NAME
   retVal=$?
   if [ $retVal -ne 0 ]; then
-    echo "Could not run speedtest... exiting"
+    echo -n `date`
+    echo " Could not run speedtest... exiting"
     exit $retVal
   fi
   /app/bin/poster.py $FILE_NAME
