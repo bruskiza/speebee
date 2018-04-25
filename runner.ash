@@ -11,26 +11,45 @@ do
   # Find the public IP address
   IP=$(curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//')
 
+  if [ "$IP" = "" ]; then
+    echo -n `date`
+    echo " - ERROR: Could not determine public IP. Please check the Internet connection"
+    exit $retVal
+  fi
+
   # get the public IP, we are running from
   echo "IP: $IP" >> $FILE_NAME
 
   echo -n `date`
-  echo " Using Channel token: '$_SPEEBEE_TOKEN'"
+  echo " - INFO: Posting to API: '$_SPEEBEE_API'"
   echo -n `date`
-  echo " Posting to channel: '$_SPEEBEE_CHANNEL'"
+  echo " - INFO: Posting to channel: '$_SPEEBEE_CHANNEL'"
   echo -n `date`
-  echo " Public IP: $IP. Starting speed test..."
+  echo " - INFO: Using channel token: '$_SPEEBEE_TOKEN'"
+  echo -n `date`
+  echo " - INFO: Public IP: $IP"
+  echo -n `date`
+  echo " - INFO: Starting speed test..."
+
   export FILE_NAME=$FILE_NAME
+
+  # run the speedtest
   speedtest-cli --simple >> $FILE_NAME
   retVal=$?
+
   if [ $retVal -ne 0 ]; then
     echo -n `date`
-    echo " Could not run speedtest... exiting"
+    echo " - ERROR: Could not run speedtest... exiting"
     exit $retVal
   fi
+
+  # post it to the $_SPEEBEE_API
   /app/bin/poster.py $FILE_NAME
+
   echo -n `date`
-  echo " Test completed... sleeping for $TIMER seconds..."
+  echo " - INFO: Test completed... sleeping for $TIMER seconds..."
   > $FILE_NAME
+
   sleep $TIMER
+
 done
