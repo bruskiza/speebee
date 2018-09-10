@@ -12,7 +12,7 @@ SpeeBee is a host-based monitoring solution for speed tests.
 ![Docker Pulls](https://img.shields.io/docker/pulls/bruskiza/speebee.svg)
 ![Docker Pulls](https://img.shields.io/docker/stars/bruskiza/speebee.svg)
 [![GitHub license](https://img.shields.io/github/license/bruskiza/speebee.svg)](https://github.com/bruskiza/speebee/blob/master/LICENSE)
-https://lgtm.com/projects/g/bruskiza/speebee/ci/
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/bruskiza/speebee.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/bruskiza/speebee/alerts/)
 
 Intention
 ---------
