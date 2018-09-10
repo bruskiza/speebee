@@ -3,9 +3,6 @@
 import os
 import re
 import sys
-import requests
-import json
-import pprint
 from beebotte import *
 
 if '_SPEEBEE_API' in os.environ:
